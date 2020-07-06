@@ -15,10 +15,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9CX-99-JTr">
-                                <rect key="frame" x="90" y="455" width="234" height="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9CX-99-JTr">
+                                <rect key="frame" x="50" y="440" width="314" height="70"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="dYv-eU-Ni4"/>
+                                    <constraint firstAttribute="height" constant="70" id="dYv-eU-Ni4"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -40,8 +40,8 @@
                         <constraints>
                             <constraint firstItem="3hL-uR-8mW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="80e-qP-Slg"/>
                             <constraint firstItem="9CX-99-JTr" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="8pQ-at-9Zw"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9CX-99-JTr" secondAttribute="trailing" constant="90" id="INm-PS-BVJ"/>
-                            <constraint firstItem="9CX-99-JTr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="v2i-nr-HjZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9CX-99-JTr" secondAttribute="trailing" constant="50" id="INm-PS-BVJ"/>
+                            <constraint firstItem="9CX-99-JTr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="v2i-nr-HjZ"/>
                             <constraint firstItem="3hL-uR-8mW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="yNm-kN-UqV"/>
                             <constraint firstItem="9CX-99-JTr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="zZi-SP-QGp"/>
                         </constraints>
