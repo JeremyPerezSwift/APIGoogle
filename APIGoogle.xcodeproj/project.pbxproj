@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		290D1AA424B322C200CEB5F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290D1AA224B322C200CEB5F7 /* Main.storyboard */; };
 		290D1AA624B322C300CEB5F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 290D1AA524B322C300CEB5F7 /* Assets.xcassets */; };
 		290D1AA924B322C300CEB5F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290D1AA724B322C300CEB5F7 /* LaunchScreen.storyboard */; };
+		290ED8B224B343D100D1ABEF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290ED8B124B343D100D1ABEF /* MapViewController.swift */; };
 		601C7D6FA60B6826E700237C /* Pods_APIGoogle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB76DC11AA577DB66504ED81 /* Pods_APIGoogle.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		290D1AA524B322C300CEB5F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		290D1AA824B322C300CEB5F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		290D1AAA24B322C300CEB5F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		290ED8B124B343D100D1ABEF /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		CB76DC11AA577DB66504ED81 /* Pods_APIGoogle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APIGoogle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -66,6 +68,7 @@
 				290D1A9C24B322C200CEB5F7 /* AppDelegate.swift */,
 				290D1A9E24B322C200CEB5F7 /* SceneDelegate.swift */,
 				290D1AA024B322C200CEB5F7 /* ViewController.swift */,
+				290ED8B124B343D100D1ABEF /* MapViewController.swift */,
 				290D1AA224B322C200CEB5F7 /* Main.storyboard */,
 				290D1AA524B322C300CEB5F7 /* Assets.xcassets */,
 				290D1AA724B322C300CEB5F7 /* LaunchScreen.storyboard */,
@@ -88,7 +91,6 @@
 				216CB2199CF95EFC763D8C3B /* Pods-APIGoogle.debug.xcconfig */,
 				255BE23DEBDBC39EF971EF4D /* Pods-APIGoogle.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -210,6 +212,7 @@
 				290D1AA124B322C200CEB5F7 /* ViewController.swift in Sources */,
 				290D1A9D24B322C200CEB5F7 /* AppDelegate.swift in Sources */,
 				290D1A9F24B322C200CEB5F7 /* SceneDelegate.swift in Sources */,
+				290ED8B224B343D100D1ABEF /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
