@@ -68,19 +68,43 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Location" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U5y-Xl-szL">
+                                <rect key="frame" x="50" y="138" width="314" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="DNc-7e-hFH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="inK-hY-LSK">
+                                <rect key="frame" x="50" y="138" width="314" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="ySc-WA-aM9"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="locationTapped:" destination="rR7-Wg-tfT" eventType="touchUpInside" id="oIi-K2-5I0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="inK-hY-LSK" firstAttribute="leading" secondItem="HBT-IH-zQS" secondAttribute="leading" constant="50" id="30h-oj-9RH"/>
                             <constraint firstItem="HBT-IH-zQS" firstAttribute="trailing" secondItem="AH5-6X-ncu" secondAttribute="trailing" id="ADi-jE-6mW"/>
+                            <constraint firstItem="inK-hY-LSK" firstAttribute="top" secondItem="Y0v-jt-eYB" secondAttribute="topMargin" constant="50" id="MbQ-vH-qTd"/>
+                            <constraint firstItem="HBT-IH-zQS" firstAttribute="trailing" secondItem="inK-hY-LSK" secondAttribute="trailing" constant="50" id="Mr4-6f-vjc"/>
+                            <constraint firstItem="U5y-Xl-szL" firstAttribute="leading" secondItem="HBT-IH-zQS" secondAttribute="leading" constant="50" id="NDr-6s-G9M"/>
                             <constraint firstItem="AH5-6X-ncu" firstAttribute="leading" secondItem="HBT-IH-zQS" secondAttribute="leading" id="Q6L-lI-uqE"/>
                             <constraint firstItem="AH5-6X-ncu" firstAttribute="top" secondItem="HBT-IH-zQS" secondAttribute="top" id="ZJ5-bN-ga2"/>
+                            <constraint firstItem="U5y-Xl-szL" firstAttribute="top" secondItem="HBT-IH-zQS" secondAttribute="top" constant="50" id="mhb-gN-hvF"/>
                             <constraint firstItem="HBT-IH-zQS" firstAttribute="bottom" secondItem="AH5-6X-ncu" secondAttribute="bottom" id="pPr-MS-FUC"/>
+                            <constraint firstItem="HBT-IH-zQS" firstAttribute="trailing" secondItem="U5y-Xl-szL" secondAttribute="trailing" constant="50" id="wXP-JF-AgB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HBT-IH-zQS"/>
                     </view>
                     <navigationItem key="navigationItem" title="Google Maps" id="aaV-EM-KwW"/>
                     <connections>
                         <outlet property="mapView" destination="AH5-6X-ncu" id="0SO-eX-vfL"/>
+                        <outlet property="textSearch" destination="U5y-Xl-szL" id="Stp-Zu-7Nz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vY4-2y-nv6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

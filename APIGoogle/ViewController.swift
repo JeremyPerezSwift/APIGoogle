@@ -27,6 +27,7 @@ class ViewController: UIViewController {
         // For use in foreground
         self.locationManager.requestWhenInUseAuthorization()
         
+        // If localization is activated, configure locationManager
         if CLLocationManager.locationServicesEnabled() {
             locationManager.delegate = self
             locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
@@ -36,7 +37,10 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: CLLocationManagerDelegate {
+    
+    // Tells the delegate that new location data is available.
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        // Retrieval and display of latitude and longitude
         guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
         print("location = \(locValue.latitude) \(locValue.longitude)")
         locationLabel.text = "location = \(locValue.latitude) longitude: \(locValue.longitude)"
